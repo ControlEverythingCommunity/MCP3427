@@ -1,8 +1,8 @@
 // Distributed with a free-will license.
 // Use it any way you want, profit or free, provided it fits in the licenses of its associated works.
-// MCP3425
-// This code is designed to work with the MCP3425_I2CADC I2C Mini Module available from ControlEverything.com.
-// https://www.controleverything.com/content/Analog-Digital-Converters?sku=MCP3425_I2CADC#tabs-0-product_tabset-2
+// MCP3427
+// This code is designed to work with the MCP3427_I2CADC I2C Mini Module available from ControlEverything.com.
+// https://www.controleverything.com/content/Analog-Digital-Converters?sku=MCP3427_I2CADC#tabs-0-product_tabset-2
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,7 +20,7 @@ void main()
 		printf("Failed to open the bus. \n");
 		exit(1);
 	}
-	// Get I2C device, MCP3425 I2C address is 0x68(104)
+	// Get I2C device, MCP3427 I2C address is 0x68(104)
 	ioctl(file, I2C_SLAVE, 0x68);
 
 	// Select configuration command(0x10)
@@ -49,6 +49,6 @@ void main()
 		}
 
 		// Output data to screen
-		printf("Raw value of the source : %d \n", raw_adc);
+		printf("Digital value of Analog input : %d \n", raw_adc);
 	}
 }
