@@ -62,8 +62,6 @@ void loop()
   }
 
   // Output data to dashboard
-  Particle.publish("Digital value of Analog input : ", String(raw_adc));
+  Particle.publish("Digital Value of Analog input : ", String(raw_adc));
   delay(1000);
 }
-
-
