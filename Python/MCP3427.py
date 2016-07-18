@@ -26,4 +26,4 @@ if raw_adc > 2047 :
 	raw_adc -= 4096
 
 # Output data to screen
-print "Digital value of Analog input : %d" %raw_adc
+print "Digital Value of Analog Input : %d" %raw_adc
