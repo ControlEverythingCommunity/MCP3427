@@ -31,7 +31,7 @@ print "Digital Value of Analog Input on Channel-1: %d" %raw_adc
 # MCP3427 address, 0x68(104)
 # Send configuration command
 #		0x30(48)	Continuous conversion mode, Channel-2, 12-bit Resolution
-bus.write_byte(0x68, 0x10)
+bus.write_byte(0x68, 0x30)
 
 # MCP3427 address, 0x68(104)
 # Read data back from 0x00(0), 2 bytes
